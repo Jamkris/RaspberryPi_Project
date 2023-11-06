@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  asdjflajsdfj
-  <script src="static/index.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="index.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+	</head>
+	<body>
+		<div class="Main_Container">
+			<div class="Header">
+				<div>실시간</div>
+				<div>미세먼지</div>
+				<div>온도</div>
+				<div>습도</div>
+				<div>장치조작</div>
+			</div>
+
+			<div class="body">
+				<div class="body_title">
+					<p style="font-size: 40px;">실시간 수치</p>
+					<p style="font-size: 20px; margin-top: 20px;">
+						(시간당 단위)
+					</p>
+				</div>
+
+				<div class="Graphs">
+					<div class="Graph1">
+						<div>온도</div>
+						<div class="Temp">
+							<p>24</p>
+							<p>(ºC)</p>
+						</div>
+					</div>
+
+					<div class="Graph2">
+						<div>미세먼지</div>
+						<div>
+							<canvas
+								id="Fine_Dust"
+								width="300"
+								height="300"
+							></canvas>
+						</div>
+					</div>
+
+					<div class="Graph3">
+						<div>습도</div>
+						<div>
+							<canvas
+								id="Humidity"
+								width="300"
+								height="300"
+							></canvas>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="../static/index.js"></script>
+	</body>
 </html>
