@@ -4,8 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href=" {{ url_for('static', filename='css/index.css') }}"/>
-		<link rel="stylesheet" href="../static/css/index.css">
+		<link rel="stylesheet" href="index.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 	</head>
 	<body>
@@ -15,7 +14,7 @@
 				<div>미세먼지</div>
 				<div>온도</div>
 				<div>습도</div>
-				<div>장치조작</div>
+				<a href="./device.html"><div>장치조작</div></a>
 			</div>
 
 			<div class="body">
@@ -57,6 +56,16 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="finedust">
+					<canvas id="line-chart" height="100"></canvas>
+				</div>
+	
+					<div class="TempChart">
+						<canvas id="Temp-chart" height="100"></canvas>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 
