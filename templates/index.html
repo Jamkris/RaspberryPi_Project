@@ -5,17 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+		<link rel="stylesheet" href="../static/css/style.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 	</head>
 	<body>
 		<div class="Main_Container">
-			<div class="Header">
-				<div>실시간</div>
-				<div>미세먼지</div>
-				<div>온도</div>
-				<div>습도</div>
-				<a href="./device.html"><div>장치조작</div></a>
-			</div>
+			
 
 			<div class="body">
 				<div class="body_title">
@@ -57,16 +52,117 @@
 					</div>
 				</div>
 
-				<div class="finedust">
-					<canvas id="line-chart" height="100"></canvas>
+				<div class="mt12">
+					<p style="font-size: 25px;">미세먼지(최근 일주일)</p>
+					<div class="mt5">
+						<canvas id="line-chart" height="100"></canvas>
+					</div>
 				</div>
-	
-					<div class="TempChart">
+
+				<div class="mt12">
+					<p style="font-size: 25px;">온/습도(최근 일주일)</p>
+					<div class="mt5">
 						<canvas id="Temp-chart" height="100"></canvas>
 					</div>
 				</div>
-				
+
+
+				<div class="Device mt12">
+					<p style="font-size: 25px;">장치</p>
+
+					<div class="mt5 Device_Container">
+						<div class="Device_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<div class="Switch_Button">
+								<input type="checkbox" id="Switch_Button">
+								<label for="Switch_Button" class="Switch_Button_label">
+									<span class="OFF_Button"></span>
+								</label>	
+							</div>
+						</div>
+
+						<div class="Device_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<div class="Switch_Button">
+								<input type="checkbox" id="Switch_Button">
+								<label for="Switch_Button" class="Switch_Button_label">
+									<span class="OFF_Button"></span>
+								</label>	
+							</div>
+						</div>
+						
+						<div class="Device_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<div class="Switch_Button">
+								<input type="checkbox" id="Switch_Button">
+								<label for="Switch_Button" class="Switch_Button_label">
+									<span class="OFF_Button"></span>
+								</label>	
+							</div>
+						</div>
+
+						<div class="Device_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<div class="Switch_Button">
+								<input type="checkbox" id="Switch_Button">
+								<label for="Switch_Button" class="Switch_Button_label">
+									<span class="OFF_Button"></span>
+								</label>	
+							</div>
+						</div>
+
+						<div class="Device_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<div class="Switch_Button">
+								<input type="checkbox" id="Switch_Button">
+								<label for="Switch_Button" class="Switch_Button_label">
+									<span class="OFF_Button"></span>
+								</label>	
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="Reservation mt12">
+					<p style="font-size: 25px;">예약</p>
+
+					<div class="mt5 Reservation_Container">
+						<div class="Reservation_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+						</div>
+						
+						<div class="Reservation_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+						</div>
+
+						<div class="Reservation_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+						</div>
+
+						<div class="Reservation_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+						</div>
+
+						<div class="Reservation_Main">
+							<p style="font-size: 25px;">서보 모터</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+							<p style="font-size: 25px;">01/31 ~ 02/01</p>
+						</div>
+					</div>
+				</div>
+					
+				</div>
 			</div>
+		</div>
 		</div>
 
 		<script src="../static/index.js"></script>
