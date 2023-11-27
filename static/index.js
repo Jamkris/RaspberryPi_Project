@@ -1,31 +1,30 @@
 new Chart(document.getElementById('Fine_Dust'), {
-	type: 'pie',
+	type: 'doughnut',
 	data: {
 		labels: ['미세먼지', 'None'],
 		datasets: [
 			{
 				label: 'Population (millions)',
 				backgroundColor: ['#8FE2C4', '#FFFFFF'],
-				data: [300, 2000],
+				data: [40, 60],
 			},
 		],
-	}
+	},
 });
 
 new Chart(document.getElementById('Humidity'), {
-	type: 'pie',
+	type: 'doughnut',
 	data: {
 		labels: ['미세먼지', 'None'],
 		datasets: [
 			{
 				label: 'Population (millions)',
 				backgroundColor: ['#8FE2C4', '#FFFFFF'],
-				data: [300, 2000],
+				data: [80, 20],
 			},
 		],
-	}
+	},
 });
-
 
 new Chart(document.getElementById('line-chart'), {
 	type: 'line',
@@ -66,13 +65,13 @@ new Chart(document.getElementById('Temp-chart'), {
 		],
 		datasets: [
 			{
-				data: [5,14,10,12,17,4,5],
+				data: [5, 14, 10, 12, 17, 4, 5],
 				label: '온도',
 				borderColor: 'red',
 				fill: false,
 			},
 			{
-				data: [-10,11,-2,-10,4,8,-4],
+				data: [-10, 11, -2, -10, 4, 8, -4],
 				label: '습도',
 				borderColor: 'blue',
 				fill: false,
@@ -80,3 +79,10 @@ new Chart(document.getElementById('Temp-chart'), {
 		],
 	},
 });
+
+const Progress = document.getElementById('Progress');
+document
+	.getElementById('Progress_Button')
+	.addEventListener('click', function () {
+		Progress.style.cssText = 'stroke-dashoffset: 20;';
+	});
